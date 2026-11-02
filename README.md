@@ -2,6 +2,12 @@
 
 A preliminary landing-page prototype for a Muslim educational community spanning Islamic knowledge, practical skills, personal development, and community.
 
+## Shareable preview
+
+https://bermyboystechsolutions.github.io/majalis-prototype/
+
+GitHub Pages publishes the root of `main`. Push committed changes to update the preview.
+
 ## Preview locally
 
 Run from this directory:

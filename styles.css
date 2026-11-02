@@ -225,7 +225,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .brand { gap: 7px; font-size: 11px; letter-spacing: .15em; }
   .brand-mark { width: 28px; height: 28px; }
   .nav-links { display: none; }
-  .nav-cta { gap: 9px; padding: 8px 12px; font-size: 10px; }
+  .nav-cta { gap: 9px; margin-left: auto; padding: 8px 12px; font-size: 10px; }
   .scroll-story { height: 560svh; touch-action: pan-y pinch-zoom; }
   .story-stage { height: 100svh; min-height: 0; }
   .hero-copy { top: clamp(74px, 11svh, 100px); left: 6vw; width: 88vw; transform: translate3d(0,0,0); }
@@ -233,12 +233,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-copy h1 { font-size: clamp(50px, 14vw, 72px); line-height: .94; }
   .hero-deck { max-width: 330px; margin: 16px 0 18px; font-size: 12px; line-height: 1.55; }
   .hero-copy .button { min-height: 44px; font-size: 11px; }
-  .hero-art { top: 75%; right: 15vw; width: min(70vw, 290px); opacity: 1; }
+  .hero-art { top: 71%; right: calc((100% - min(80vw, 330px)) / 2); width: min(80vw, 330px); opacity: 1; }
   .learning-node { max-width: 112px; min-height: 27px; gap: 4px; padding: 4px 5px 4px 4px; font-size: 7px; }
   .node-index { width: 18px; height: 18px; font-size: 6px; }
   .art-caption { bottom: 0; right: 5%; font-size: 5px; }
   .map-medallion { width: 39%; }
   .medallion-label { padding: 8px; }
+  .medallion-label small { font-size: 4px; letter-spacing: .06em; }
   .hero-bottomline { right: 6vw; left: 6vw; bottom: max(17px, env(safe-area-inset-bottom)); gap: 15px; font-size: 6px; }
   .hero-bottomline > span:last-child { display: none; }
   .scroll-hint { gap: 6px; white-space: nowrap; }
@@ -297,7 +298,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-copy h1 { font-size: clamp(45px, 13vw, 56px); }
   .hero-deck { margin: 12px 0 14px; font-size: 11px; line-height: 1.45; }
   .hero-copy .button { min-height: 40px; }
-  .hero-art { top: 77%; right: 21vw; width: min(58vw, 230px); }
+  .hero-art { top: 74%; right: calc((100% - min(64vw, 240px)) / 2); width: min(64vw, 240px); }
   .learning-panel { padding-top: 28px; padding-bottom: 12px; }
   .panel-heading .eyebrow { font-size: 7px; margin-bottom: 8px; }
   .panel-heading h2 { font-size: 31px; }
@@ -335,6 +336,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .card-icon { width: 16px; height: 16px; }
   .topic-pill { font-size: 6px; padding: 2px 4px; }
   .panel-footer { padding-top: 5px; }
+}
+
+@media (max-width: 360px) and (max-height: 600px) {
+  .learning-panel { padding-top: 18px; }
+  .panel-heading h2 { font-size: 28px; }
+  .panel-aside { font-size: 8px; }
+  .space-grid { margin-top: 10px; margin-bottom: 8px; }
+  .space-card { padding: 8px; }
+  .space-card p { line-height: 1.25; }
+  .panel-footer { padding-top: 6px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
