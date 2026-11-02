@@ -1,0 +1,1272 @@
+{
+  "date": "2026-11-01",
+  "browser": "Native Google Chrome Beta 158.0.8127.2 (visible, GPU enabled)",
+  "displayHz": 60,
+  "scope": "Frame timing measured on the local Tailscale preview; matching published assets and public-site interactions separately verified. Phone results use Chrome device emulation, not a physical phone.",
+  "runs": [
+    {
+      "name": "baseline-controlled",
+      "environment": {
+        "width": 1080,
+        "height": 913,
+        "dpr": 1,
+        "cpuRate": 1
+      },
+      "scenes": [
+        {
+          "scene": "hero",
+          "fps": 60,
+          "median": 16.699999999982538,
+          "p95": 17.60000000000582,
+          "p99": 17.70000000001164,
+          "max": 17.70000000001164,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 482,
+              "ms": 50.806000000000026
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 482,
+              "ms": 168.0510000000003
+            },
+            "FunctionCall": {
+              "count": 482,
+              "ms": 128.8540000000002
+            },
+            "FireAnimationFrame": {
+              "count": 482,
+              "ms": 137.20899999999997
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 4,
+              "ms": 0.233
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 1,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 968,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "cards-scroll",
+          "fps": 59.501580899743395,
+          "median": 16.699999999982538,
+          "p95": 17.60000000000582,
+          "p99": 17.70000000001164,
+          "max": 33.39999999999418,
+          "over25ms": 2,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 746,
+              "ms": 36.66600000000003
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 739,
+              "ms": 469.06499999999994
+            },
+            "FunctionCall": {
+              "count": 968,
+              "ms": 143.371
+            },
+            "FireAnimationFrame": {
+              "count": 729,
+              "ms": 144.2210000000003
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 2162,
+              "ms": 24.125000000000064
+            },
+            "Animation": {
+              "count": 420,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 1010,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "outro-scroll",
+          "fps": 59.75649229390252,
+          "median": 16.699999999982538,
+          "p95": 17.60000000000582,
+          "p99": 17.70000000001164,
+          "max": 33.59999999997672,
+          "over25ms": 1,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 1045,
+              "ms": 45.08699999999998
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 717,
+              "ms": 404.16999999999956
+            },
+            "FunctionCall": {
+              "count": 973,
+              "ms": 129.83100000000027
+            },
+            "FireAnimationFrame": {
+              "count": 733,
+              "ms": 129.31800000000013
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 3281,
+              "ms": 26.545000000000222
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 1012,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "about",
+          "fps": 60.00398366696553,
+          "median": 16.699999999982538,
+          "p95": 17.60000000000582,
+          "p99": 17.699999999982538,
+          "max": 17.70000000001164,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 729,
+              "ms": 77.63799999999995
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 243,
+              "ms": 72.80600000000004
+            },
+            "FunctionCall": {
+              "count": 242,
+              "ms": 12.986000000000006
+            },
+            "FireAnimationFrame": {
+              "count": 242,
+              "ms": 18.186
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 972,
+              "ms": 30.96499999999994
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 972,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "community",
+          "fps": 59.998008364867296,
+          "median": 16.699999999982538,
+          "p95": 17.5,
+          "p99": 17.60000000000582,
+          "max": 17.699999999982538,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 729,
+              "ms": 70.73800000000006
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 243,
+              "ms": 60.918
+            },
+            "FunctionCall": {
+              "count": 242,
+              "ms": 11.457999999999993
+            },
+            "FireAnimationFrame": {
+              "count": 242,
+              "ms": 16.021
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 729,
+              "ms": 19.819999999999958
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 972,
+              "ms": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "optimized-desktop",
+      "environment": {
+        "width": 1080,
+        "height": 913,
+        "dpr": 1,
+        "cpuRate": 1
+      },
+      "scenes": [
+        {
+          "scene": "hero",
+          "fps": 59.9880023995201,
+          "median": 16.699999999999818,
+          "p95": 17.59999999999991,
+          "p99": 17.699999999999818,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 0,
+              "ms": 0
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 242,
+              "ms": 64.32400000000003
+            },
+            "FunctionCall": {
+              "count": 241,
+              "ms": 16.99700000000001
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 22.487
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 0,
+              "ms": 0
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 1,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 490,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "cards-scroll",
+          "fps": 60.01444331000823,
+          "median": 16.69999999999891,
+          "p95": 17.600000000000364,
+          "p99": 17.700000000000728,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 19,
+              "ms": 2.9810000000000003
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 492,
+              "ms": 88.34799999999989
+            },
+            "FunctionCall": {
+              "count": 483,
+              "ms": 55.66300000000006
+            },
+            "FireAnimationFrame": {
+              "count": 242,
+              "ms": 10.131999999999998
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 20,
+              "ms": 0.4860000000000001
+            },
+            "Animation": {
+              "count": 8,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 994,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "outro-scroll",
+          "fps": 59.998500037499085,
+          "median": 16.69999999999891,
+          "p95": 17.600000000000364,
+          "p99": 17.700000000000728,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 20,
+              "ms": 2.2789999999999995
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 464,
+              "ms": 75.53599999999993
+            },
+            "FunctionCall": {
+              "count": 482,
+              "ms": 46.80600000000002
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 8.251000000000001
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 24,
+              "ms": 1.0779999999999998
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 992,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "about",
+          "fps": 59.998500037499085,
+          "median": 16.700000000000728,
+          "p95": 17.700000000000728,
+          "p99": 17.700000000000728,
+          "max": 17.80000000000291,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 0,
+              "ms": 0
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 241,
+              "ms": 57.449999999999996
+            },
+            "FunctionCall": {
+              "count": 241,
+              "ms": 14.499999999999995
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 19.707000000000022
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 0,
+              "ms": 0
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 482,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "community",
+          "fps": 60,
+          "median": 16.700000000000728,
+          "p95": 17.599999999998545,
+          "p99": 17.700000000000728,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 0,
+              "ms": 0
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 241,
+              "ms": 35.10699999999998
+            },
+            "FunctionCall": {
+              "count": 241,
+              "ms": 13.296
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 18.131000000000014
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 0,
+              "ms": 0
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 482,
+              "ms": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "optimized-mobile",
+      "environment": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3,
+        "cpuRate": 1
+      },
+      "scenes": [
+        {
+          "scene": "hero",
+          "fps": 59.98500374906274,
+          "median": 16.699999999999818,
+          "p95": 17.599999999999454,
+          "p99": 17.699999999999818,
+          "max": 17.700000000000273,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 0,
+              "ms": 0
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 241,
+              "ms": 59.72800000000001
+            },
+            "FunctionCall": {
+              "count": 241,
+              "ms": 13.258000000000004
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 17.838999999999995
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 0,
+              "ms": 0
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 1,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 488,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "cards-scroll",
+          "fps": 59.99700014999249,
+          "median": 16.69999999999891,
+          "p95": 17.600000000000364,
+          "p99": 17.600000000000364,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 13,
+              "ms": 0.9199999999999999
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 495,
+              "ms": 98.32200000000005
+            },
+            "FunctionCall": {
+              "count": 482,
+              "ms": 66.00799999999998
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 11.226999999999997
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 24,
+              "ms": 3.68
+            },
+            "Animation": {
+              "count": 8,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 1002,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "outro-scroll",
+          "fps": 60,
+          "median": 16.69999999999891,
+          "p95": 17.600000000000364,
+          "p99": 17.700000000000728,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 20,
+              "ms": 3.655
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 471,
+              "ms": 91.06399999999985
+            },
+            "FunctionCall": {
+              "count": 482,
+              "ms": 65.49300000000001
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 10.642999999999997
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 22,
+              "ms": 1.107
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 1008,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "about",
+          "fps": 60.00099586715129,
+          "median": 16.700000000000728,
+          "p95": 17.599999999998545,
+          "p99": 17.700000000000728,
+          "max": 17.799999999999272,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 0,
+              "ms": 0
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 242,
+              "ms": 52.73999999999999
+            },
+            "FunctionCall": {
+              "count": 242,
+              "ms": 13.117999999999995
+            },
+            "FireAnimationFrame": {
+              "count": 242,
+              "ms": 17.82900000000001
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 0,
+              "ms": 0
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 484,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "community",
+          "fps": 60,
+          "median": 16.700000000000728,
+          "p95": 17.599999999998545,
+          "p99": 17.700000000000728,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 0,
+              "ms": 0
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 241,
+              "ms": 40.86200000000001
+            },
+            "FunctionCall": {
+              "count": 241,
+              "ms": 14.454000000000006
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 19.63500000000002
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 0,
+              "ms": 0
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 482,
+              "ms": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "optimized-mobile-4x",
+      "environment": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3,
+        "cpuRate": 4
+      },
+      "scenes": [
+        {
+          "scene": "hero",
+          "fps": 60.008465924653265,
+          "median": 16.699999999999818,
+          "p95": 17.5,
+          "p99": 17.59999999999991,
+          "max": 17.600000000000364,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 0,
+              "ms": 0
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 242,
+              "ms": 38.624
+            },
+            "FunctionCall": {
+              "count": 242,
+              "ms": 7.653999999999987
+            },
+            "FireAnimationFrame": {
+              "count": 242,
+              "ms": 9.638
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 0,
+              "ms": 0
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 1,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 490,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "cards-scroll",
+          "fps": 60,
+          "median": 16.600000000000364,
+          "p95": 17.599999999998545,
+          "p99": 17.600000000000364,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 13,
+              "ms": 3.4809999999999994
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 495,
+              "ms": 72.46500000000005
+            },
+            "FunctionCall": {
+              "count": 482,
+              "ms": 37.06200000000003
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 7.308999999999982
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 24,
+              "ms": 1.5240000000000002
+            },
+            "Animation": {
+              "count": 8,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 1000,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "outro-scroll",
+          "fps": 59.985003749062734,
+          "median": 16.600000000002183,
+          "p95": 17.5,
+          "p99": 17.600000000000364,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 20,
+              "ms": 2.5309999999999997
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 466,
+              "ms": 43.037000000000035
+            },
+            "FunctionCall": {
+              "count": 482,
+              "ms": 26.134000000000018
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 8.29999999999998
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 22,
+              "ms": 0.41900000000000015
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 994,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "about",
+          "fps": 60,
+          "median": 16.700000000000728,
+          "p95": 17.599999999998545,
+          "p99": 17.700000000000728,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 0,
+              "ms": 0
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 241,
+              "ms": 33.11900000000001
+            },
+            "FunctionCall": {
+              "count": 241,
+              "ms": 7.0809999999999915
+            },
+            "FireAnimationFrame": {
+              "count": 241,
+              "ms": 8.717999999999996
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 0,
+              "ms": 0
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 482,
+              "ms": 0
+            }
+          }
+        },
+        {
+          "scene": "community",
+          "fps": 59.998008364867566,
+          "median": 16.600000000002183,
+          "p95": 17.5,
+          "p99": 17.600000000002183,
+          "max": 17.700000000000728,
+          "over25ms": 0,
+          "over50ms": 0,
+          "longTasks": [],
+          "trace": {
+            "Paint": {
+              "count": 0,
+              "ms": 0
+            },
+            "Layout": {
+              "count": 0,
+              "ms": 0
+            },
+            "UpdateLayoutTree": {
+              "count": 242,
+              "ms": 8.181999999999993
+            },
+            "FunctionCall": {
+              "count": 242,
+              "ms": 3.1159999999999943
+            },
+            "FireAnimationFrame": {
+              "count": 242,
+              "ms": 5.301999999999992
+            },
+            "DrawFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "DroppedFrame": {
+              "count": 0,
+              "ms": 0
+            },
+            "RasterTask": {
+              "count": 0,
+              "ms": 0
+            },
+            "Animation": {
+              "count": 0,
+              "ms": 0
+            },
+            "FrameSequenceTracker": {
+              "count": 0,
+              "ms": 0
+            },
+            "FramePresented": {
+              "count": 0,
+              "ms": 0
+            },
+            "PipelineReporter": {
+              "count": 484,
+              "ms": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

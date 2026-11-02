@@ -28,3 +28,7 @@ Open http://127.0.0.1:4173/ in Chrome.
 - Reduced motion preferences disable the pinned animation sequence.
 
 The generated Moroccan and Ottoman inspired geometric assets contain no Arabic text. This is a visual prototype; course, account, membership, and payment features are not connected.
+
+## Verification
+
+See [the performance and responsive checks](docs/performance.md) for measurements, limits, and instructions for repeating the native Chrome profiling pass.
