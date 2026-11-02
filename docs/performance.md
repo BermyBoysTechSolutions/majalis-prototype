@@ -66,3 +66,9 @@ WIDTH=390 HEIGHT=844 DPR=3 CPU_RATE=4 RELOAD=1 node scripts/profile.mjs phone-4x
 ```
 
 Results, screenshots, and DevTools traces are saved in the ignored `.performance/` directory. Device emulation and CPU throttling stay attached to the profiling connection for the full measurement.
+
+## Icon consistency polish
+
+Decorative font glyphs were replaced with shared inline SVG symbols so phones cannot substitute emoji artwork. The existing bubble, book, star, bars, wave, arrow, and infinity motifs now scale within their containers. Wheel path geometry and animation timing are shared across desktop and mobile; medallion and pattern proportions scale consistently.
+
+Native Chrome checks passed at 1440 × 900, 390 × 844, 320 × 568, and 667 × 375: all 24 icon instances resolve to the same symbols, the wheel path geometry is identical, and the five cards have no content or viewport overflow. A two-second phone-emulated hero check measured approximately 60 fps with no intervals over 25 ms. This was a focused follow-up check, not a repeat of the full benchmark above.
