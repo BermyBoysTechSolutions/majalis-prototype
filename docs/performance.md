@@ -72,3 +72,7 @@ Results, screenshots, and DevTools traces are saved in the ignored `.performance
 Decorative font glyphs were replaced with shared inline SVG symbols so phones cannot substitute emoji artwork. The existing bubble, book, star, bars, wave, arrow, and infinity motifs now scale within their containers. Wheel path geometry and animation timing are shared across desktop and mobile; medallion and pattern proportions scale consistently.
 
 Native Chrome checks passed at 1440 × 900, 390 × 844, 320 × 568, and 667 × 375: all 24 icon instances resolve to the same symbols, the wheel path geometry is identical, and the five cards have no content or viewport overflow. A two-second phone-emulated hero check measured approximately 60 fps with no intervals over 25 ms. This was a focused follow-up check, not a repeat of the full benchmark above.
+
+## Account CTA checks
+
+Native Chrome interaction checks passed at 1440 × 900, 390 × 844, and 320 × 568. Header Sign up and Log in controls fit with 44px-tall targets; sign-up actions in the hero and community section open the correct account preview. Mode switching, keyboard focus containment, Escape, close controls, native touch taps, and returning to the learning-spaces scene all pass. No uncaught JavaScript errors were observed. Account registration/login are clearly marked as coming soon; the prototype collects no credentials.

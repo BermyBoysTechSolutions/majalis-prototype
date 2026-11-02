@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=vector-polish-3" />
+    <link rel="stylesheet" href="./styles.css?v=account-ctas-4" />
   </head>
   <body>
     <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -24,6 +24,7 @@
         <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 21V3m-7 7 7-7 7 7" /></symbol>
         <symbol id="icon-arrow-down" viewBox="0 0 24 24"><path d="M12 3v18m-7-7 7 7 7-7" /></symbol>
         <symbol id="icon-infinity" viewBox="0 0 24 24"><path d="M12 12c-3-5-5-5-7-5a5 5 0 0 0 0 10c2 0 4 0 7-5s5-5 7-5a5 5 0 0 1 0 10c-2 0-4 0-7-5Z" /></symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19" /></symbol>
       </defs>
     </svg>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -41,7 +42,10 @@
         <a href="#about">Our purpose</a>
         <a href="#community">Community</a>
       </nav>
-      <a class="nav-cta" href="#spaces">Explore <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg></span></a>
+      <div class="header-actions">
+        <button class="nav-login" type="button" data-account-mode="login" aria-haspopup="dialog" aria-controls="account-dialog">Log in</button>
+        <button class="nav-cta" type="button" data-account-mode="signup" aria-haspopup="dialog" aria-controls="account-dialog">Sign up <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg></span></button>
+      </div>
     </header>
 
     <main id="main">
@@ -53,7 +57,10 @@
               <p class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> A place to learn and become</p>
               <h1>Knowledge<br />with <em>purpose.</em></h1>
               <p class="hero-deck">Strengthen your understanding. Build practical skills. Grow alongside people who want to benefit others.</p>
-              <a class="button button-lime" href="#spaces">Explore the learning spaces <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-arrow-se"></use></svg></span></a>
+              <div class="hero-actions">
+                <button class="button button-lime" type="button" data-account-mode="signup" aria-haspopup="dialog" aria-controls="account-dialog">Sign up <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg></span></button>
+                <a class="hero-browse" href="#spaces">Explore the learning spaces</a>
+              </div>
             </div>
 
             <div class="hero-art" aria-hidden="true">
@@ -183,7 +190,7 @@
           <p class="eyebrow eyebrow-lime"><span class="eyebrow-dot"></span> A community built to benefit</p>
           <h2>Better, <em>together.</em></h2>
           <p>MAJALIS is a place to learn from qualified experts, develop valuable skills, exchange knowledge, and grow together. Whether you’re strengthening your understanding of the Deen, exploring health or business, developing technical skills, or working on yourself, there’s a place for you here.</p>
-          <a class="button button-lime" href="#spaces">Find your learning space <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg></span></a>
+          <button class="button button-lime" type="button" data-account-mode="signup" aria-haspopup="dialog" aria-controls="account-dialog">Sign up for MAJALIS <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg></span></button>
           <div class="community-note"><span class="note-mark"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-star"></use></svg></span><span>Come with curiosity.<br />Leave room for others to grow.</span></div>
         </div>
         <div class="community-stamp" aria-hidden="true"><span>LEARN</span><i><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-star"></use></svg></i><span>CONNECT</span><i><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-star"></use></svg></i><span>BENEFIT</span></div>
@@ -199,6 +206,15 @@
       <a class="back-top" href="#top">BACK TO TOP <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-arrow-up"></use></svg></a>
       <span class="footer-small">A PRELIMINARY CONCEPT · 2026</span>
     </footer>
-    <script src="./script.js?v=vector-polish-3" defer></script>
+    <dialog class="account-dialog" id="account-dialog" aria-labelledby="account-heading" aria-describedby="account-description">
+      <button class="account-close" type="button" data-account-close aria-label="Close account preview"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-close"></use></svg></button>
+      <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> MAJALIS · Account preview</p>
+      <p class="account-mode" id="account-mode-label">Sign up</p>
+      <h2 id="account-heading">Your next chapter<br />starts here.</h2>
+      <p id="account-description">Sign-up is coming soon. This prototype previews the MAJALIS experience; member accounts are not available yet.</p>
+      <a class="button button-dark account-browse" href="#spaces" data-account-browse>Explore the learning spaces <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg></span></a>
+      <p class="account-switch-copy"><span id="account-switch-label">Already a member?</span> <button type="button" class="account-switch" data-account-mode="login">Log in</button></p>
+    </dialog>
+    <script src="./script.js?v=account-ctas-4" defer></script>
   </body>
 </html>

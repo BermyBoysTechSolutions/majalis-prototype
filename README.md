@@ -32,3 +32,7 @@ The generated Moroccan and Ottoman inspired geometric assets contain no Arabic t
 ## Verification
 
 See [the performance and responsive checks](docs/performance.md) for measurements, limits, and instructions for repeating the native Chrome profiling pass.
+
+## Account calls to action
+
+The header provides Sign up and Log in actions; the hero and closing community section emphasize sign-up while retaining a secondary learning-spaces link. These open an accessible account-preview dialog with explicit coming-soon messaging. Authentication is not connected, and the preview does not collect credentials.

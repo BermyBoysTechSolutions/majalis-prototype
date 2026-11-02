@@ -172,3 +172,65 @@
   document.addEventListener('visibilitychange', syncVisibility);
   syncVisibility();
 })();
+
+(() => {
+  const dialog = document.querySelector('#account-dialog');
+  if (!dialog) return;
+  const heading = dialog.querySelector('#account-heading');
+  const description = dialog.querySelector('#account-description');
+  const modeLabel = dialog.querySelector('#account-mode-label');
+  const switchLabel = dialog.querySelector('#account-switch-label');
+  const switchButton = dialog.querySelector('.account-switch');
+  const copy = {
+    signup: {
+      label: 'Sign up',
+      heading: 'Your next chapter starts here.',
+      description: 'Sign-up is coming soon. This prototype previews the MAJALIS experience; member accounts are not available yet.',
+      switchLabel: 'Already a member?',
+      switchMode: 'login',
+      switchText: 'Log in',
+    },
+    login: {
+      label: 'Log in',
+      heading: 'Welcome back to MAJALIS.',
+      description: 'Member login is coming soon. Account access is not enabled in this prototype yet.',
+      switchLabel: 'New to MAJALIS?',
+      switchMode: 'signup',
+      switchText: 'Sign up',
+    },
+  };
+
+  document.querySelectorAll('[data-account-mode]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const content = copy[button.dataset.accountMode] || copy.signup;
+      modeLabel.textContent = content.label;
+      heading.textContent = content.heading;
+      description.textContent = content.description;
+      switchLabel.textContent = content.switchLabel;
+      switchButton.dataset.accountMode = content.switchMode;
+      switchButton.textContent = content.switchText;
+      if (!dialog.open) dialog.showModal();
+    });
+  });
+  dialog.querySelector('[data-account-close]').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('keydown', (event) => {
+    if (event.key !== 'Tab') return;
+    const controls = [...dialog.querySelectorAll('button:not([disabled]), a[href]')];
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
+  // Close before the existing learning-spaces anchor handler scrolls the page.
+  dialog.querySelector('[data-account-browse]').addEventListener('click', () => dialog.close(), { capture: true });
+  dialog.addEventListener('click', (event) => {
+    if (event.target !== dialog) return;
+    const bounds = dialog.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+  });
+})();
